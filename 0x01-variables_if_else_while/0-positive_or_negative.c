@@ -1,15 +1,27 @@
-#include <unistd.h> 
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 /**
- * main - prints a standard error
- * Return: Always 1 (Successful)
- * i just started again
-*/
+ * main - Prints if number is positive, zero or negative
+ *Return: Always (Success)
+ */
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59); 
-	return (1);
+	int n;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else
+	{
+		printf("%d is negative\n", n);
+	}
+	return (0);
 }
-fprintf(stderr, "and that piece of art is useful\" - \
-		Dora Korpar, 2015-10-19\n");
-return (1);
-}
+
