@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
- * * main - Entry point
- * * Return: Always 0 (Success)
- * */
+* main - Entry point
+* Return: Always 0 (Successful)
+* This is me trying my style
+*/
 int main(void)
 {
 	printf("Size of a char: %ld byte(s)\n", sizeof(char));
