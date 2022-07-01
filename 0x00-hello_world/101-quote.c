@@ -1,15 +1,12 @@
-#include <unistd.h> 
+#include <unistd.h>
 /**
- * main - prints a standard error
+ * main - Entry point
  * Return: Always 1 (Successful)
- * i know that i can make it
-*/
+ * i made it ooooo
+ */
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59); 
+	char str1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(2, str1, 59);
 	return (1);
-}
-fprintf(stderr, "and that piece of art is useful\" - \
-		Dora Korpar, 2015-10-19\n");
-return (1);
 }
