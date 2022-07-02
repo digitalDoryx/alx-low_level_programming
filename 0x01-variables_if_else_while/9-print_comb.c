@@ -1,20 +1,24 @@
 #include <stdio.h>
-
 /**
-  * main - Prints the alphabet at reverse
-  *
-  * Return: Always (Success)
-  */
+ * main - prints all possible combinations of single digit numbers.
+(*
+ * Return: 0 on success
+ */
 int main(void)
 {
-	char c;
+	int i = '0';
 
-	for (c = 'z'; c >= 'a'; c--)
+	while (i <= '9')
 	{
-		putchar(c);
+		putchar(i);
+		if (i != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		++i;
 	}
-
 	putchar('\n');
-
 	return (0);
+
 }
