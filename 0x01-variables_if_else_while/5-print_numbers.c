@@ -1,13 +1,11 @@
 #include <stdio.h>
-
 /**
- * main - texto
- *
- * Return: text in printf
+ * main - Prints the numbers from 0-9.
+(*
+ * Return: 0 on success
  */
-
 int main(void)
 {
-		printf("with proper grammar, but the outcome is a piece of art,\n");
-			return (0);
+	printf("0123456789\n");
+	return (0);
 }
