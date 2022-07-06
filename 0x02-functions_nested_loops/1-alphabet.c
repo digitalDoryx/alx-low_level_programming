@@ -1,22 +1,17 @@
-#include "putchar.h"
+#include "main.h"
+
 /**
- * print_alphabet - check the code for Holberton School students.
+ * print_alphabet - print a-z
  *
- * Return: Always 0.
- * Yes yes yes
+ * Return: Always void
  */
-
 void print_alphabet(void)
-
 {
-	char alp = 'a';
-	
-	while (alp <= 'z')
-	{
-		_putchar (alp);
-		alp++;
-	
-	}
-	_putchar ('\n');
+	int a;
 
+	for (a = 97; a <= 122; a++)
+	{
+		_putchar(a);
+	}
+	_putchar('\n');
 }
