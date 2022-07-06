@@ -1,26 +1,21 @@
-#include "putchar.h"
+#include "main.h"
 
 /**
- * 4_isalpha - check the code for Holberton School students.
- * 
- * @c: is c an integer argument
+ * _isalpha - Check for alphabet
  *
- * Return: Always 0
+ * @c: ASCII code
+ *
+ * Return: Always 1 for letter, 0 for the rest
  */
-
-int 4_isalpha(int c)
-
+int _isalpha(int c)
 {
-	if (c >= 97 && c <= 122)
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 	{
 		return (1);
 	}
-	
-	else if (c >= 65 && c <= 90)
+	else
 	{
-		return (1);
+		return (0);
 	}
-	
-	return (0);
-
+	_putchar('\n');
 }

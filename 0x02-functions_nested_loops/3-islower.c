@@ -1,20 +1,21 @@
-#include "putchar.h"
+#include "main.h"
 
 /**
- * _islower - checks for a lowercase character
+ * _islower - check for lowercase
  *
- * @c: letter being tested
+ * @c: ASCII code
  *
- * Return: Always 0
- * This me trying to understand
-*/
-
+ * Return: Always 1 (Success)
+ */
 int _islower(int c)
-
 {
 	if (c >= 97 && c <= 122)
+	{
 		return (1);
+	}
 	else
+	{
 		return (0);
-
+	}
+	_putchar('\n');
 }

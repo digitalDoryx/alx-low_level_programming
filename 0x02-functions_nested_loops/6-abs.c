@@ -1,21 +1,21 @@
-#include "putchar.h"
+#include "main.h"
 
 /**
- * 6_abs - returns absolute value of an int
+ * _abs - absolute value of int
  *
- * @n: integer from which to get an absolute value
+ * @a: as int
  *
- * Return: Void.
+ * Return: abs value
  */
-
-int 6_abs(int n)
-
+int _abs(int a)
 {
-	if (n < 0)
-	{
-		return (n * -1);
-	}
-	
-	return (n);
 
+	if (a >= 0)
+	{
+		return (a);
+	}
+	else
+	{
+		return (a * -1);
+	}
 }

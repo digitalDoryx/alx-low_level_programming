@@ -1,21 +1,20 @@
-include "putchar.h"
+#include "main.h"
 
 /**
+ * print_last_digit - print_last_digit
  *
- * print_last_digit - prints the last digit of a number
- * @n: number being tested
+ * @a: number as int
  *
- * Return: Always 0.
- *
+ * Return: last digit
  */
-
-int print_last_digit(int n)
-
+int print_last_digit(int a)
 {
-	n = n % 10;
-	if (n < 0)
-		n = -n;
-	_putchar(n + '0');
-	return (n);
+	int s;
 
+	s = a % 10;
+
+	if (s < 0)
+		s = -s;
+	_putchar(s + '0');
+	return (s);
 }
