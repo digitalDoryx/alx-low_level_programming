@@ -1,45 +1,31 @@
-#include "putchar.h"
+#include "main.h"
 
 /**
+ * times_table - 9 times table
  *
- * times_table - Print 9 times table
- *
- * Return: Void.
+ * Return: void
  */
-
 void times_table(void)
-
 {
-	int x, y, multiplied_value;
-	
-	for (y = 0; y < 10; y++)
+	int j, k, opp;
+
+	for (j = 0; j <= 9; j++)
 	{
-		
-		for (x = 0; x < 10; x++)
+		_putchar(48);
+		for (k = 1; k <= 9; k++)
 		{
-			multiplied_value = x * y;
-			if (x == 0)
+			opp = j * k;
+			_putchar(44);
+			_putchar(32);
+			if (opp <= 9)
 			{
-				
-				_putchar(multiplied_value + '0');
-			}
-			else if (multiplied_value >= 10)
-			{
-				
-				_putchar(' ');
-				_putchar(multiplied_value / 10 + '0');
-				_putchar(multiplied_value % 10 + '0');
+				_putchar(32);
+				_putchar(opp + 48);
 			}
 			else
 			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(multiplied_value + '0');
-			}
-			if (x != 9)
-			{
-				
-				_putchar(',');
+				_putchar((opp / 10) + 48);
+				_putchar((opp % 10) + 48);
 			}
 		}
 		_putchar('\n');
