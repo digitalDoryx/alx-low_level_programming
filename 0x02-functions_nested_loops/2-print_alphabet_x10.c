@@ -1,31 +1,20 @@
-#include "putchar.h"
+#include "main.h"
 
 /**
- * main - print_alphabet_x10 - func
+ * print_alphabet_x10 - print alphabet 10 times
  *
- * Return - 0
- *
+ * Return: Always 0 (Success)
  */
-
 void print_alphabet_x10(void)
-
 {
+	int a, b;
 
-	int b = 0;
-
-	while (b < 10)
-
+	for (a = 0; a <= 9; a++)
 	{
-		char a = 'a';
-
-		while (a <= 'z')
-
+		for (b = 97; b <= 122; b++)
 		{
-			_putchar(a);
-			a++;
+			_putchar(b);
 		}
-		
 		_putchar('\n');
-		b++;
 	}
 }
