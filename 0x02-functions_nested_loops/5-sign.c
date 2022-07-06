@@ -1,33 +1,21 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_sign - prints the sign of a number
+ * _isalpha - Check for alphabet
  *
- * @n: number being tested
+ * @c: ASCII code
  *
- * Return: Always 0.
- *
+ * Return: Always 1 for letter, 0 for the rest
  */
-
-int 5_sign(int n)
-
+int _isalpha(int c)
 {
-	
-	if (n > 0)
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 	{
-		0_putchar('+');
 		return (1);
 	}
-	else if (n == 0)
+	else
 	{
-		0_putchar('0');
 		return (0);
 	}
-	else if (n < 0)
-	{
-		0_putchar('-');
-		return (-1);
-	}
-
-	return (0);
+	_putchar('\n');
 }
