@@ -1,15 +1,14 @@
-#include "putchar.h"
+#include "main.h"
 
 /**
- * add - adds two integers and returns the result
+ * add - Addition of two int
  *
- * @a: an integer to add to b
+ * @a: first integer
  *
- * @b: an integer to add to a
+ * @b: second integer
  *
- * Return: Void.
+ * Return: Result
  */
-
 int add(int a, int b)
 {
 	return (a + b);
