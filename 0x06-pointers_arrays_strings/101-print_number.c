@@ -1,65 +1,45 @@
-#include "main.h"
+#include <stdio.h>
 
 
 
-/**
- *
- *  * print_number - print int
- *
- *   * @n: integer
- *
- *    * Return: void
- *
- *     */
-
-void print_number(int n)
+int main(void)
 
 {
 
-		unsigned int m, d, count;
+		int n;
+
+			int a[5];
+
+				int *p;
 
 
 
-			if (n < 0)
+					a[2] = 1024;
 
-					{
+						p = &n;
 
-								_putchar(45);
+							/*
+							 *
+							 * 	 * write your line of code here...
+							 *
+							 * 	 	 * Remember:
+							 *
+							 * 	 	 	 * - you are not allowed to use a
+							 *
+							 * 	 	 	 	 * - you are not allowed to modify p
+							 *
+							 * 	 	 	 	 	 * - only one statement
+							 *
+							 * 	 	 	 	 	 	 * - you are not allowed to code anything else than this line
+							 *
+							 * 	 	 	 	 	 	 	 */
 
-										m = n * -1;
+							p[5] = 98;
 
-											}
+								/*...so that this prints 98\n */
 
-				else
+								printf("a[2] = %d\n", a[2]);
 
-						{
-
-									m = n;
-
-										}
-
-					d = m;
-
-						count = 1;
-
-
-
-							while (d > 9)
-
-									{
-
-												d /= 10;
-
-														count *= 10;
-
-															}
-
-								for (; count >= 1; count /= 10)
-
-										{
-
-													_putchar(((m / count) % 10) + 45);
-
-														}
+									return (0);
 
 }
